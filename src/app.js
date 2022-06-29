@@ -28,7 +28,7 @@ router.get('/post',(ctx,next) => {
 });
 
 
-app.use(router.routes()).use(router.allowedMethods());
+app.use(router.routes()).use(router.allowedMethods()); // 이건 정확히 무슨 뜻이지?
 
 app.listen(PORT,() => {
     console.log(`hello koa http://localhost:${PORT}`);
